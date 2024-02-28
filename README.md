@@ -5,7 +5,7 @@
 <!-- Original background with CC0 from https://www.maxpixel.net/Digital-Network-Internet-Communication-Connections-3537400 -->
 
 <!-- title -->
-# URLCheck
+# URL Shield
 
 <hr width="50%">
 
