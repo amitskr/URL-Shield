@@ -16,6 +16,8 @@ to remove trackers, affiliate links, unnecessary elements, check Hosts, facilita
 
 
 <!-- ---------- Screenshots ---------- -->
+
+<!--
 <div style="display: flex;">
   <img src="app/src/main/play/listings/en-US/graphics/phone-screenshots/1-title.png" width=30%>
   <img src="app/src/main/play/listings/en-US/graphics/phone-screenshots/2-dialog.png" width=30%>
@@ -28,4 +30,5 @@ to remove trackers, affiliate links, unnecessary elements, check Hosts, facilita
 </div>
 
 </div>
+-->
 
