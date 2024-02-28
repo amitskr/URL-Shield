@@ -10,7 +10,7 @@ You can check existing code to see examples, but be aware that some are not perf
 
 ### For translator:
 
-You are free to propose one or more translations, or to update any existing one. Be sure of your work before providing it to the developers, who cannot verify it. You can translate it using [Weblate](https://hosted.weblate.org/engage/urlcheck/), as a [pull request](https://github.com/TrianguloY/UrlChecker/pulls)/[issue](https://github.com/TrianguloY/UrlChecker/issues/new) titled `{locale} Translation proposal` or by sending the files by email to [TrianguloY](https://github.com/TrianguloY).
+You are free to propose one or more translations, or to update any existing one. Be sure of your work before providing it to the developers, who cannot verify it. You can translate it using [Weblate](https://hosted.weblate.org/engage/urlcheck/), as a [pull request](https://github.com/amitskr/URL-Shield/pulls)/[issue](https://github.com/amitskr/URL-Shield/issues/new) titled `{locale} Translation proposal` or by sending the files by email to [amitskr/](https://github.com/amitskr/).
 
 For manual translation, there are two independent things to translate:
 

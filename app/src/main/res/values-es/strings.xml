@@ -4,7 +4,7 @@
         If you create or update a translation, add how you want to be credited here.
         For multiple translators, separate them by semicolon.
         Example: <string name="translators">John Doe; Jane Doe</string> -->
-    <string name="translators">TrianguloY; PabloOQ</string>
+    <string name="translators">Amit &amp; Vivek</string>
     <!--
         Locale name:
         Write the locale name in the locale language, for users that doesn't know english. For example 'Español' instead of 'Spanish' -->
@@ -20,11 +20,11 @@
     <!--
         about
     -->
-    <string name="txt_about">"Aplicación creada por TrianguloY.
+    <string name="txt_about">"Aplicación creada por Amit &amp; Vivek.
 
 Contribuciones: %s.
 Traducciones: %s."</string>
-    <string name="link_blog">Blog de TrianguloY</string>
+    <string name="link_blog">Blog de Amit &amp; Vivek</string>
     <string name="link_changelog">Cambios</string>
     <string name="link_source">Código fuente</string>
     <string name="link_privacy">Política de privacidad</string>
@@ -245,7 +245,7 @@ Hay algunos enlaces cuyo único propósito es redirigirte a otro enlace. Si el e
     <string name="mRemove_name">Eliminador de parámetros</string>
     <string name="mRemove_desc">[OBSOLETO] Con este módulo puede eliminar consultas de la URL.
 \nPresione el botón para eliminarlos todos o presione la flecha para eliminar uno a la vez.
-\n¡Gracias a PabloOQ por la idea y la implementación original!
+\n¡Gracias a Vivek por la idea y la implementación original!
 \n
 \nEste módulo ha quedado obsoleto en favor del módulo \'Partes de la URI\'</string>
     <string name="mRemove_found1">1 parámetro encontrado</string>

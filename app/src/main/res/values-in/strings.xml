@@ -23,12 +23,12 @@
     <string name="txt_tutorial3">Atur aplikasi ini sebagai peramban web bawaan untuk mencegat URL ketika dibuka.
 \n(Tidak diperlukan jika URL diteruskan menggunakan fitur \"Bagikan\".)</string>
     <string name="btn_configureBrowser">Peramban web bawaan</string>
-    <string name="link_blog">Blog TrianguloY</string>
+    <string name="link_blog">Blog vivekajee</string>
     <string name="btn_linksSettings">Buka tautan yang didukung</string>
     <string name="menu_resetOrder">Atur ulang urutan</string>
     <string name="btn_setBrowser">Setel sebagai peramban bawaan</string>
     <string name="btn_androidSettings">Pengaturan aplikasi Android</string>
-    <string name="txt_about">Aplikasi dibuat oleh TrianguloY.
+    <string name="txt_about">Aplikasi dibuat oleh vivekajee.
 \n
 \nKontributor: %s.
 \nPenerjemah: %s.</string>

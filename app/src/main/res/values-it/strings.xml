@@ -16,11 +16,11 @@
     <string name="a_settings">Impostazioni</string>
     <string name="a_about">Informazioni</string>
     <!-- about -->
-    <string name="txt_about">"App creata da TrianguloY.
+    <string name="txt_about">"App creata da vivekajee.
 
 Contributi: %s.
 Traduzioni: %s."</string>
-    <string name="link_blog">Blog di TrianguloY</string>
+    <string name="link_blog">Blog di vivekajee</string>
     <string name="link_changelog">Changelog</string>
     <string name="link_source">Codice sorgente</string>
     <string name="link_privacy">Informativa sulla privacy</string>

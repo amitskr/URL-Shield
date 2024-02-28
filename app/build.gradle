@@ -4,15 +4,14 @@ plugins {
 }
 
 android {
-    namespace 'com.trianguloy.urlchecker'
+    namespace 'com.asvk.urlshield'
     defaultConfig {
-        applicationId "com.trianguloy.urlchecker"
-        compileSdk 33
-        minSdkVersion 14
-        targetSdkVersion 33
-        versionCode 29
-        versionName "2.13.1"
-
+        applicationId "com.asvk.urlshield"
+        compileSdk 34
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
 
         // generate buildconfig field with all locales
         def folder = file("src/main/res") // from this folder

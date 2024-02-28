@@ -47,12 +47,12 @@
     <string name="txt_tutorial3">Установите приложение в качестве веб-браузера по умолчанию для перехвата URL-адресов при их открытии.
 \n(Не нужно если URL-адреса перенаправляются функцией \"Поделиться\")</string>
     <string name="btn_configureBrowser">Браузер по умолчанию</string>
-    <string name="link_blog">Блог TrianguloY</string>
+    <string name="link_blog">Блог vivekajee</string>
     <string name="btn_linksSettings">Открытие поддерживаемых ссылок</string>
     <string name="menu_resetOrder">Сбросить порядок</string>
     <string name="btn_setBrowser">Установить браузером по умолчанию</string>
     <string name="btn_androidSettings">Настройки Android приложения</string>
-    <string name="txt_about">Приложение сделано TrianguloY.
+    <string name="txt_about">Приложение сделано vivekajee.
 \n
 \nРазработка: %s
 \nПеревод: %s.</string>

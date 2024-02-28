@@ -19,9 +19,9 @@
     <string name="txt_theme">Temă:</string>
     <string name="spin_darkTheme">Întunecat</string>
     <string name="spin_lightTheme">Luminat</string>
-    <string name="link_blog">Blogul lui TrianguloY</string>
+    <string name="link_blog">Blogul lui vivekajee</string>
     <string name="txt_conf">Aici sunt prezentate toate modulele disponibile, unde puteți verifica descrierea și setările acestora. De asemenea, puteți să le reordonați, să comutați vizibilitatea titlului și să le activați/dezactivați.</string>
-    <string name="txt_about">Aplicație creată de TrianguloY.
+    <string name="txt_about">Aplicație creată de vivekajee.
 \n
 \nContribuții: %s. Traduceri: %s.</string>
     <string name="txt_locale">Localitate:</string>

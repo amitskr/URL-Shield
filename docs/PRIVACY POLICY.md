@@ -1,8 +1,8 @@
 
 ## Introduction
-This privacy policy covers the use of the 'URLCheck' (https://github.com/amitskr/UrlChecker) Android application.
+This privacy policy covers the use of the 'URLCheck' (https://github.com/amitskr/URL-Shield) Android application.
 
-It may not be applicable to other software produced or released by TrianguloY (https://github.com/amitskr/UrlChecker).
+It may not be applicable to other software produced or released by amitskr (https://github.com/amitskr).
 
 URLCheck when running does not collect any statistics, personal information, or analytics from its users, other than Android operating system built in mechanisms that are present for all the mobile applications.
 

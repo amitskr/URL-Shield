@@ -1,0 +1,45 @@
+name: Update dynamic files
+
+# When pushing to the master branch
+on:
+  push:
+    branches:
+      - master
+
+
+# parameters
+env:
+  TAG: latest
+  SHIELDS: shields.json
+
+permissions:
+  contents: write # need to update tag and release
+
+# Workflow in ubuntu
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repository files
+        uses: actions/checkout@v4
+
+      - name: Create ${{ env.SHIELDS }} file
+        run: |
+          cat <<EOF | tee ${{ env.SHIELDS }}
+          {
+            "version": "v$(sed -ne "s/ *versionName \+['\"]\([^'\"]*\)['\"]/\1/p" app/build.gradle)"
+          }
+          EOF
+
+      - name: Update ${{ env.TAG }} tag to current commit
+        # equivalent to EndBug/latest-tag@latest but simpler
+        run: |
+          git tag --force ${{ env.TAG }}
+          git push --force origin tag ${{ env.TAG }}
+
+      - name: Upload ${{ env.SHIELDS }} to ${{ env.TAG }} release
+        # equivalent to softprops/action-gh-release@v1 but using official cli
+        run: |
+          gh release upload ${{ env.TAG }} ${{ env.SHIELDS }} --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

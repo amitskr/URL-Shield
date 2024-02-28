@@ -20,11 +20,11 @@
     <!--
         about
     -->
-    <string name="txt_about">"Uygulama TrianguloY tarafından geliştirilmiştir.
+    <string name="txt_about">"Uygulama vivekajee tarafından geliştirilmiştir.
 
 Geliştiriciler: %s.
 Çeviriler: %s."</string>
-    <string name="link_blog">TrianguloY\'un blog sayfası</string>
+    <string name="link_blog">vivekajee\'un blog sayfası</string>
     <string name="link_changelog">Değişiklikler</string>
     <string name="link_source">Kaynak Kodu</string>
     <string name="link_privacy">Gizlilik Politikası</string>

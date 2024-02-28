@@ -87,7 +87,7 @@
 \n- Knop Openen: druk op de app-naam om de link in die app te openen. Als een link met meerdere apps kan worden geopend, wordt er een pijl weergegeven waarmee u kunt kiezen.
 \n- Knop Kopiëren: Druk op de knop om de link naar het klembord te kopiëren.
 \n- Deelknop: druk op de knop om de link te delen.</string>
-    <string name="link_blog">TrianguloY\'s blog</string>
+    <string name="link_blog">vivekajee\'s blog</string>
     <string name="mClear_matches">Komt overeen met %s</string>
     <string name="mOpen_with">Openen met %s</string>
     <string name="mHist_desc">Wanneer de URL wordt bewerkt, handmatig of door andere modules, kunt u met deze module de wijzigingen bekijken en ongedaan maken.</string>
@@ -108,7 +108,7 @@
     <string name="mOpen_closeOpen">Dialoogvenster sluiten na openen</string>
     <string name="btn_setBrowser">Stel in als standaard browser</string>
     <string name="btn_androidSettings">Instellingen voor Android</string>
-    <string name="txt_about">App gemaakt door TrianguloY.
+    <string name="txt_about">App gemaakt door vivekajee.
 \n
 \nBijdragen: %s.
 \nVertalingen: %s.</string>

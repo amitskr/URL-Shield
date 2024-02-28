@@ -11,7 +11,7 @@
     <string name="a_modules">मॉड्यूल्स</string>
     <string name="translators">GMishx</string>
     <string name="menu_resetOrder">क्रम रीसेट करें</string>
-    <string name="txt_about">TrianguloY द्वारा बनाया एप्प।
+    <string name="txt_about">vivekajee द्वारा बनाया एप्प।
 \n
 \nयोगदान: %s।
 \nअनुवाद: %s।</string>
@@ -176,7 +176,7 @@
     <string name="mLog_limit">रखने के लिए प्रविष्टियों की अधिकतम संख्या। अनुशंसित मान: 100। असीमित के लिए खाली छोड़ें</string>
     <string name="mHosts_build">निर्माण</string>
     <string name="mRemove_one">%s को हटाएँ</string>
-    <string name="link_blog">TrianguloY\'s का ब्लॉग</string>
+    <string name="link_blog">vivekajee\'s का ब्लॉग</string>
     <string name="mFlag_editFlags">डिफ़ॉल्ट ध्वज मान संपादित करें</string>
     <string name="mStatus_autoRedirect">पुनर्निर्देशन URL को स्वचालित रूप से बदलें</string>
     <string name="mClear_upToDate">कैटलॉग अद्यतित</string>

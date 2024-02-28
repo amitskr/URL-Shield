@@ -20,11 +20,11 @@
     <!--
         about
     -->
-    <string name="txt_about">"Aplicação criada por TrianguloY.
+    <string name="txt_about">"Aplicação criada por vivekajee.
 
 Contributions: %s.
 Translations: %s."</string>
-    <string name="link_blog">"Blog do TrianguloY"</string>
+    <string name="link_blog">"Blog do vivekajee"</string>
     <string name="link_changelog">Log de alterações</string>
     <string name="link_source">Código fonte</string>
     <string name="link_privacy">Política de privacidade</string>

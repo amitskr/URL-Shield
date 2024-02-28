@@ -19,10 +19,10 @@
     <!--
         about
     -->
-    <string name="txt_about">Програму розробив TrianguloY.
+    <string name="txt_about">Програму розробив vivekajee.
 \n
 \nContributions: %s. Translations: %s.</string>
-    <string name="link_blog">Блог TrianguloY</string>
+    <string name="link_blog">Блог vivekajee</string>
     <!--
         configuration
     -->

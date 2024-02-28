@@ -54,7 +54,7 @@ V 2.9
 - Estilos y código mejorados
 
 V 2.8
-- Renombrada aplicación de 'Analizador de Urls' a 'URLCheck'
+- Renombrada aplicación de 'Analizador de Urls' a 'URL-Shield'
 - Nueva traducción al Japonés. ¡Gracias a 404potato!
 - Nuevos ejemplos y mejoras del Comprobador de patrones
 - Nuevo ajuste para activar la ordenación de aplicaciones por dominio

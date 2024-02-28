@@ -23,12 +23,12 @@
     <string name="txt_tutorial3">Όρισε την εφαρμογή ως τον προεπιλεγμένο περιηγητή για να καταγράφει τα URLs των συνδέσμων όταν τους ανοίγεις.
 \n(Δεν χρειάζεται αν χρησιμοποιείτε \"Κοινοποίηση\")</string>
     <string name="btn_configureBrowser">Προεπιλεγμένος περιηγητής</string>
-    <string name="link_blog">Το μπλογκ του TrianguloY</string>
+    <string name="link_blog">Το μπλογκ του vivekajee</string>
     <string name="btn_linksSettings">Άνοιξε τους υποστηριζόμενους συνδέσμους</string>
     <string name="menu_resetOrder">Επαναφορά σειράς</string>
     <string name="btn_setBrowser">Όρισε ως προεπιλεγμένο περιηγητή</string>
     <string name="btn_androidSettings">Ρυθμίσεις Android της εφαρμογής</string>
-    <string name="txt_about">Η εφαρμογή δημιουργήθηκε από τον TrianguloY.
+    <string name="txt_about">Η εφαρμογή δημιουργήθηκε από τον vivekajee.
 \n
 \nΣυνεισφορές: %s.
 \nΜεταφράσεις: %s.</string>

@@ -15,10 +15,10 @@
     <string name="a_modules">מודולים</string>
     <string name="a_about">על אודות</string>
     <!-- about -->
-    <string name="txt_about">"אפליקציה שנוצרה על ידי TrianguloY.
+    <string name="txt_about">"אפליקציה שנוצרה על ידי vivekajee.
  תרומות: %s.
  תרגומים: %s."</string>
-    <string name="link_blog">"הבלוג של TrianguloY"</string>
+    <string name="link_blog">"הבלוג של vivekajee"</string>
     <!-- configuration -->
     <string name="txt_conf">רשימת מודולים: אתה יכול להפעיל או לבטל אותם, גם לבדוק את התיאור והתצורה שלו.</string>
     <string name="toast_cantEnable">"לא ניתן להפעיל את המודול, חסרה תצורה?"</string>
