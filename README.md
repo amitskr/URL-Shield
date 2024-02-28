@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ---------- Header ---------- -->
-<img src="![banner](https://github.com/amitskr/URL-Shield/assets/72401473/1a0bdfe5-8816-4e92-a92a-52097683e93d)">
+<img src="https://github.com/amitskr/URL-Shield/assets/72401473/1a0bdfe5-8816-4e92-a92a-52097683e93d">
 
 <!-- title -->
 # URL Shield
