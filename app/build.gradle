@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'com.github.triplet.play' version '3.8.3'
+}
+
+android {
+    namespace 'com.trianguloy.urlchecker'
+    defaultConfig {
+        applicationId "com.trianguloy.urlchecker"
+        compileSdk 33
+        minSdkVersion 14
+        targetSdkVersion 33
+        versionCode 29
+        versionName "2.13.1"
+
+
+        // generate buildconfig field with all locales
+        def folder = file("src/main/res") // from this folder
+        def prefix = "values-" // with this prefix
+        def translations = folder.list().toList().stream() // from all files in the folder
+                .filter { it.startsWith(prefix) } // keep those starting with the prefix
+                .filter { file("$folder.path/$it/strings.xml").exists() } // and containing a strings translation
+                .collect { it }
+        def constructor = translations.stream()
+                .map { it.substring(prefix.length()).replace('-r', '-') } // extract the locale code
+                .collect { '"' + it + '"' } // convert as 'string'
+                .join(',') // and concatenate with commas
+        buildConfigField "java.util.List<String>", 'LOCALES', "java.util.List.of(\"en\",$constructor)" // create field
+
+        // generate string resource with all translators
+        def translators = translations.stream() // for all translations
+                .map { file("$folder.path/$it/strings.xml") } // get the xml file
+                .map { new XmlParser().parse(it).find { it.@name == "translators" }?.text() ?: "" } // extract translators
+                .filter { it != "" } // filter empty
+                .flatMap { it.split(';').stream() } // split multiple
+                .map { it.strip() } // trim
+                .filter { it != "TrianguloY" } // remove myself
+                .distinct().sorted() // keep distinct and sort them
+                .collect { it }.join(', ') // join with commas
+        print "Extracted translators: $translators"
+        resValue "string", "all_translators", translators // create resource
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        alpha {
+            initWith(buildTypes.debug)
+            applicationIdSuffix '.alpha'
+            versionNameSuffix '-ALPHA'
+        }
+        evaluation {
+            initWith(buildTypes.debug)
+            applicationIdSuffix '.test'
+            versionNameSuffix '-TEST'
+        }
+    }
+
+    lint {
+        // users are free to update translations whenever
+        // this mean that they are not usually up to date
+        // and that there are usually lots of missing translations
+        // so we ignore missing strings
+        disable 'MissingTranslation'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+play {
+    track.set("beta")
+    releaseName.set(android.defaultConfig.versionName + " (" + android.defaultConfig.versionCode + ")")
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
