@@ -29,6 +29,6 @@ to remove trackers, affiliate links, unnecessary elements, check Hosts, facilita
   <img src="app/src/main/play/listings/en-US/graphics/phone-screenshots/8-settings.png" width=30%>
 </div>
 
-</div>
 -->
+</div>
 
