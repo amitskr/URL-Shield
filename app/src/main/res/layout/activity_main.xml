@@ -1,189 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="#808080"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/heading"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-        <TextView
-            android:id="@+id/welcome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0sp"
-            android:padding="0sp"
-            android:text="@string/welcome"
-            android:textSize="40sp" />
-
-        <TextView
-            android:id="@+id/appName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0sp"
-            android:gravity="start"
-            android:padding="0sp"
-            android:text="@string/app_name"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-            android:textSize="52sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/trust"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0sp"
-            android:padding="0sp"
-            android:text="@string/your_trusted_text"
-            android:textSize="26sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/heading"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/panel_bg"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="@dimen/padding">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:gravity="center"
-            android:text="@string/txt_info"/>
 
         <LinearLayout
+            android:id="@+id/heading"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="clip_horizontal"
-            android:gravity="center_horizontal"
-            android:weightSum="2"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:layout_height="190dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:onClick="openSample"
-                android:src="@drawable/test_group" />
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0sp"
+                android:padding="0sp"
+                android:text="@string/welcome"
+                android:textSize="40sp" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:onClick="openModulesActivity"
-                android:src="@drawable/modules_group" />
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0sp"
+                android:gravity="start"
+                android:padding="0sp"
+                android:text="@string/app_name"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0sp"
+                android:padding="0sp"
+                android:text="@string/your_trusted_text"
+                android:textSize="26sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="clip_horizontal"
-            android:gravity="center_horizontal"
-            android:weightSum="2"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading"
             android:layout_marginTop="40dp"
-            android:orientation="horizontal">
+            android:background="@drawable/panel_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:onClick="openSettings"
-                android:src="@drawable/settings_group" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="@string/txt_info" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:onClick="openAbout"
-                android:src="@drawable/about_group" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="openSample"
+                    android:src="@drawable/test_group" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="openModulesActivity"
+                    android:src="@drawable/modules_group" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="openSettings"
+                    android:src="@drawable/settings_group" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="openAbout"
+                    android:src="@drawable/about_group" />
+            </LinearLayout>
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/padding"-->
+            <!--            android:autoLink="web"-->
+            <!--            android:clickable="true"-->
+            <!--            android:focusable="true"-->
+            <!--            android:gravity="center"-->
+            <!--            android:linksClickable="false"-->
+            <!--            android:text="@string/txt_sample" />-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:autoLink="web"-->
+            <!--            android:clickable="true"-->
+            <!--            android:focusable="true"-->
+            <!--            android:gravity="center"-->
+            <!--            android:linksClickable="false"-->
+            <!--            android:minHeight="48dp"-->
+            <!--            android:onClick="openSample"-->
+            <!--            android:padding="@dimen/smallPadding"-->
+            <!--            android:text="@string/sample_url" />-->
+
+            <!--        <Button-->
+            <!--            style="?android:attr/buttonBarButtonStyle"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/padding"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:drawableStart="@android:drawable/ic_menu_sort_by_size"-->
+            <!--            android:drawablePadding="@dimen/smallPadding"-->
+            <!--            android:onClick="openModulesActivity"-->
+            <!--            android:paddingLeft="@dimen/padding"-->
+            <!--            android:paddingRight="@dimen/padding"-->
+            <!--            android:text="@string/a_modules" />-->
+
+            <!--        <Button-->
+            <!--            style="?android:attr/buttonBarButtonStyle"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/smallPadding"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:drawableStart="@android:drawable/ic_menu_preferences"-->
+            <!--            android:drawablePadding="@dimen/smallPadding"-->
+            <!--            android:onClick="openSettings"-->
+            <!--            android:paddingLeft="@dimen/padding"-->
+            <!--            android:paddingRight="@dimen/padding"-->
+            <!--            android:text="@string/a_settings" />-->
+
+            <!--        <Button-->
+            <!--            style="?android:attr/buttonBarButtonStyle"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/smallPadding"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:drawableStart="@android:drawable/ic_menu_info_details"-->
+            <!--            android:drawablePadding="@dimen/smallPadding"-->
+            <!--            android:onClick="openAbout"-->
+            <!--            android:paddingLeft="@dimen/padding"-->
+            <!--            android:paddingRight="@dimen/padding"-->
+            <!--            android:text="@string/a_about" />-->
         </LinearLayout>
 
-        <!--        <TextView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="@dimen/padding"-->
-        <!--            android:autoLink="web"-->
-        <!--            android:clickable="true"-->
-        <!--            android:focusable="true"-->
-        <!--            android:gravity="center"-->
-        <!--            android:linksClickable="false"-->
-        <!--            android:text="@string/txt_sample" />-->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:background="@android:color/transparent"
+            android:onClick="aboutToast"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
 
-        <!--        <TextView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:autoLink="web"-->
-        <!--            android:clickable="true"-->
-        <!--            android:focusable="true"-->
-        <!--            android:gravity="center"-->
-        <!--            android:linksClickable="false"-->
-        <!--            android:minHeight="48dp"-->
-        <!--            android:onClick="openSample"-->
-        <!--            android:padding="@dimen/smallPadding"-->
-        <!--            android:text="@string/sample_url" />-->
 
-        <!--        <Button-->
-        <!--            style="?android:attr/buttonBarButtonStyle"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="@dimen/padding"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:drawableStart="@android:drawable/ic_menu_sort_by_size"-->
-        <!--            android:drawablePadding="@dimen/smallPadding"-->
-        <!--            android:onClick="openModulesActivity"-->
-        <!--            android:paddingLeft="@dimen/padding"-->
-        <!--            android:paddingRight="@dimen/padding"-->
-        <!--            android:text="@string/a_modules" />-->
+    </RelativeLayout>
 
-        <!--        <Button-->
-        <!--            style="?android:attr/buttonBarButtonStyle"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="@dimen/smallPadding"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:drawableStart="@android:drawable/ic_menu_preferences"-->
-        <!--            android:drawablePadding="@dimen/smallPadding"-->
-        <!--            android:onClick="openSettings"-->
-        <!--            android:paddingLeft="@dimen/padding"-->
-        <!--            android:paddingRight="@dimen/padding"-->
-        <!--            android:text="@string/a_settings" />-->
-
-        <!--        <Button-->
-        <!--            style="?android:attr/buttonBarButtonStyle"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="@dimen/smallPadding"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:drawableStart="@android:drawable/ic_menu_info_details"-->
-        <!--            android:drawablePadding="@dimen/smallPadding"-->
-        <!--            android:onClick="openAbout"-->
-        <!--            android:paddingLeft="@dimen/padding"-->
-        <!--            android:paddingRight="@dimen/padding"-->
-        <!--            android:text="@string/a_about" />-->
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:background="@android:color/transparent"
-        android:onClick="aboutToast"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo" />
-
-</RelativeLayout>
+</ScrollView>
