@@ -41,7 +41,7 @@ public class AboutActivity extends Activity {
         if (!BuildConfig.DEBUG) {
             // on release, append version to the action bar title
             setTitle(getTitle() + " (V" + BuildConfig.VERSION_NAME + ")");
-        } else if (!"alpha".equals(BuildConfig.BUILD_TYPE)) {
+        } else {
             // on no-alpha, append type
             setTitle(getTitle() + " (" + BuildConfig.BUILD_TYPE + ")");
         }
@@ -61,7 +61,7 @@ public class AboutActivity extends Activity {
             v_link.setText(link.first);
             AndroidUtils.setAsClickable(v_link);
             v_link.setTag(link.second.replace("{package}", getPackageName()));
-            // click to open, longclick to share
+            // click to open, long-click to share
             v_link.setOnClickListener(v -> open(((String) v.getTag())));
             v_link.setOnLongClickListener(v -> {
                 share(((String) v.getTag()));
@@ -95,7 +95,7 @@ public class AboutActivity extends Activity {
      */
     private void share(String url) {
         Intent share = new Intent(android.content.Intent.ACTION_SEND);
-        share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        share.addFlags(Intent. FLAG_ACTIVITY_NEW_DOCUMENT);
 
         // Add data to the intent, the receiving app will decide what to do with it.
         share.setType("text/plain");

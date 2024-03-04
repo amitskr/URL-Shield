@@ -80,6 +80,10 @@ public class MainActivity extends Activity {
         PackageUtils.startActivity(new Intent(this, AboutActivity.class), R.string.toast_noApp, this);
     }
 
+    public void openTest(View view) {
+        PackageUtils.startActivity(new Intent(this, TestActivity.class), R.string.toast_noApp, this);
+    }
+
     public void openSample(View view) {
         PackageUtils.startActivity(new Intent(Intent.ACTION_VIEW,
                 Uri.parse(getString(R.string.sample_url))

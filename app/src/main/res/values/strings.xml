@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Translator(s) name:
-        If you create or update a translation, add how you want to be credited here.
-        For multiple translators, separate them by semicolon.
-        Example: <string name="translators">John Doe; Jane Doe</string> -->
-    <string name="translators">Amit &amp; Vivek</string>
-    <!--
-        Locale name:
-        Write the locale name in the locale language, for users that doesn't know english. For example 'Español' instead of 'Spanish'-->
+
+    <string name="translators">amitskr &amp; vivekajee</string>
+
     <string name="locale">English</string>
     <!--
         main
@@ -342,4 +337,7 @@ This is an advanced version of the 'Queries Remover' module."</string>
     <string name="mChg_view">View changes</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <!--
@@ -22,19 +22,20 @@
         android:theme="@style/ActivityThemeDark"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
+        <activity android:name=".activities.TestActivity"/>
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.ModulesActivity" />
         <activity android:name=".activities.SettingsActivity" />
         <activity android:name=".activities.TutorialActivity" />
         <activity
             android:name=".dialogs.MainDialog"
-            android:excludeFromRecents="true"
             android:clearTaskOnLaunch="true"
-            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:launchMode="singleInstance"
             android:noHistory="true"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog">
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"
+            android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -66,7 +67,6 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
-
                 <data android:mimeType="text/html" />
                 <data android:mimeType="text/plain" />
                 <data android:mimeType="application/xhtml+xml" />
@@ -100,15 +100,16 @@
         </activity>
         <activity
             android:name=".activities.ShortcutsActivity"
-            android:label="@string/shortcut_checkClipboard"
-            android:icon="@mipmap/clipboard_launcher"
-            android:exported="true"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/clipboard_launcher"
+            android:label="@string/shortcut_checkClipboard"
             android:launchMode="singleTask"
             android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -123,18 +124,16 @@
                 <action android:name="android.support.customtabs.action.CustomTabsService" />
             </intent-filter>
         </service>
-
         <service
             android:name=".activities.ShortcutsActivity$ShortcutsTile"
+            android:exported="true"
             android:icon="@drawable/ic_clipboard"
             android:label="@string/shortcut_checkClipboard"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:exported="true">
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
-
     </application>
 
 </manifest>
