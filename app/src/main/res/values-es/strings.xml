@@ -338,4 +338,5 @@ Hay algunos enlaces cuyo único propósito es redirigirte a otro enlace. Si el e
     <string name="mChg_view">Ver los cambios</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

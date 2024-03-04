@@ -7,14 +7,79 @@
     android:orientation="vertical"
     tools:context=".activities.TestActivity">
 
-    <TextView
-        android:id="@+id/fullscreen_content"
+    <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:text="@string/app_name"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="@dimen/smallPadding"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:autoLink="web"
+        android:clickable="true"
+        android:focusable="true"
         android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:linksClickable="false"
+        android:text="@string/txt_sample" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:minHeight="48dp"
+        android:onClick="openSample"
+        android:padding="@dimen/smallPadding"
+        android:text="@string/sample_url" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="@dimen/smallPadding"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sample_url"
+        android:autofillHints="postalAddress"
+        android:inputType="textUri"
+        android:background="@drawable/edit_text"
+        android:padding="8dp"
+        android:layout_marginHorizontal="32sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/no_incognito"
+        android:drawablePadding="@dimen/smallPadding"
+        android:onClick="checkURL"
+        android:padding="@dimen/smallPadding"
+        android:text="@string/submit"
+        android:layout_margin="32sp"/>
+
+
+
 
 </LinearLayout>

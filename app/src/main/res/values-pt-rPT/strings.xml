@@ -242,4 +242,5 @@ Para desabilitar o log, basta desabilitar o módulo."</string>
     <string name="mHosts_built">Banco de dados construído: %d hosts</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -108,4 +108,5 @@
     <string name="mLog_desc">Acest modul înregistrează toate adresele URL verificate. Puteți vizualiza, șterge sau edita jurnalul complet aici, nicio indicație vizuală nu va apărea în dialogul principal. Pentru a dezactiva înregistrarea, trebuie doar să dezactivați modulul.</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

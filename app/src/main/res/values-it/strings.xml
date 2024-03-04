@@ -254,4 +254,5 @@ Per disabilitare il logging, ti basta disabilitare il modulo."</string>
     <string name="shortcut_checkClipboard">Controlla gli URL dagli appunti</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

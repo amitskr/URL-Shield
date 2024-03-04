@@ -297,4 +297,5 @@ Leur API est limitée à 10 requêtes par heure pour les nouveaux contrôles. L
     <string name="mUnshort_ok">Déraccourci</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

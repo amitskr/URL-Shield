@@ -119,4 +119,5 @@
     <string name="mPttrn_name">Mønstersjekker</string>
     <string name="welcome">Welcome to</string>
     <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
+    <string name="submit">Submit</string>
 </resources>

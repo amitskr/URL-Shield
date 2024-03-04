@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import com.asvk.urlshield.BuildConfig;
 import com.asvk.urlshield.R;
@@ -17,6 +18,8 @@ import com.asvk.urlshield.utilities.methods.PackageUtils;
  * status bar and navigation/system bar) with user interaction.
  */
 public class TestActivity extends Activity {
+    EditText url;
+    String uri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,8 @@ public class TestActivity extends Activity {
             setTitle(getTitle() + " (" + BuildConfig.BUILD_TYPE + ")");
         }
 
+        url=findViewById(R.id.uri);
+
     }
 
     public void openSample(View view) {
@@ -42,4 +47,14 @@ public class TestActivity extends Activity {
         ).setPackage(getPackageName()), R.string.toast_noApp, this);
     }
 
+    public void checkURL(View view) {
+        uri=url.getText().toString().trim();
+        if (uri.startsWith("https://") || uri.startsWith("http://")) {
+            PackageUtils.startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(uri)
+            ).setPackage(getPackageName()), R.string.toast_noApp, this);
+        } else {
+            url.setError("Please Enter Correct URL");
+        }
+    }
 }
