@@ -3,7 +3,6 @@ package com.asvk.urlshield.utilities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Build;
 import android.util.Log;
 
@@ -14,6 +13,7 @@ import com.asvk.urlshield.utilities.generics.GenericPref;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
@@ -83,7 +83,9 @@ public interface AndroidSettings {
                 if (BuildConfig.DEBUG) Log.d("LOCALE", "Locale " + tag + " is not present");
             }
         }
-        Collections.sort(available, (a, b) -> a.toString().compareTo(b.toString()));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Collections.sort(available, Comparator.comparing(AvailableLocale::toString));
+        }
         available.add(0, new AvailableLocale(cntx.getString(R.string.deviceDefault)));
         return available;
     }

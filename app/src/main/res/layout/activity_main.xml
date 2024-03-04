@@ -81,14 +81,16 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:onClick="openSample"
-                    android:src="@drawable/test_group" />
+                    android:src="@drawable/test_group"
+                    android:contentDescription="@string/app_name"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:onClick="openModulesActivity"
-                    android:src="@drawable/modules_group" />
+                    android:src="@drawable/modules_group"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -105,14 +107,16 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:onClick="openSettings"
-                    android:src="@drawable/settings_group" />
+                    android:src="@drawable/settings_group"
+                    android:contentDescription="@string/app_name"/>
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:onClick="openAbout"
-                    android:src="@drawable/about_group" />
+                    android:src="@drawable/about_group"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <!--        <TextView-->
