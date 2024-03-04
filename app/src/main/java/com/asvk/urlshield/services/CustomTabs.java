@@ -12,8 +12,9 @@ import com.asvk.urlshield.utilities.generics.GenericPref;
 /**
  * Empty service for fake custom tabs.
  * <p>
- * referrer: https://chromium.googlesource.com/chromium/src/+/b71e98cdf14f18cb967a73857826f6e8c568cea0/chrome/android/java/src/org/chromium/chrome/browser/customtabs/CustomTabsConnectionService.java
+ * referrer: <a href="https://chromium.googlesource.com/chromium/src/+/b71e98cdf14f18cb967a73857826f6e8c568cea0/chrome/android/java/src/org/chromium/chrome/browser/customtabs/CustomTabsConnectionService.java">...</a>
  */
+
 public class CustomTabs extends Service {
 
     public static GenericPref.Bool SHOWTOAST_PREF(Context cntx) {
