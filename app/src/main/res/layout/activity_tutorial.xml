@@ -24,8 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -61,8 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -181,8 +181,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -233,28 +233,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="36dp"
                     android:gravity="center"
                     android:text="@string/txt_tutorial4" />
 
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/padding"
-                    android:drawableStart="@android:drawable/ic_menu_sort_by_size"
-                    android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
-                    android:drawablePadding="@dimen/smallPadding"
+                    android:contentDescription="@string/app_name"
                     android:onClick="openModulesActivity"
-                    android:paddingLeft="@dimen/padding"
-                    android:paddingRight="@dimen/padding"
-                    android:text="@string/a_modules" />
+                    android:src="@drawable/modules_group" />
+
             </LinearLayout>
 
         </ScrollView>
@@ -269,8 +264,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -287,8 +282,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/smallPadding"
-        android:layout_weight="0">
+        android:layout_weight="0"
+        android:padding="@dimen/smallPadding">
 
         <Button
             android:id="@+id/bBack"
