@@ -295,4 +295,6 @@ Leur API est limitée à 10 requêtes par heure pour les nouveaux contrôles. L
     <string name="mUnshort_notFound">"Aucune redirection n'a été trouvée"</string>
     <string name="mUnshort_pending">en attente: %d/%d</string>
     <string name="mUnshort_ok">Déraccourci</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

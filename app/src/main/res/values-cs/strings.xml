@@ -271,4 +271,6 @@
     <string name="mPttrn_wrongSchemaHttps">Neplatné HTTPS schéma.</string>
     <string name="mChg_name">Seznam změn</string>
     <string name="mChg_desc">Upozorní, kdy by byla aplikace aktualizována.</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

@@ -275,4 +275,6 @@
     <string name="mChg_current">Aktuelle Version: %s</string>
     <string name="mChg_view">Änderungen ansehen</string>
     <string name="mPttrn_wrongSchemaHttps">Ungültige Großschreibung des https-Schemas.</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

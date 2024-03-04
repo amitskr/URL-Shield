@@ -280,4 +280,6 @@
     <string name="mPttrn_regexfix">修改可选正则表达式组合（如果正则表达式不能正确生效禁用）</string>
     <string name="mOpen_mergeCopy">合并复制和分享按钮（长按复制）</string>
     <string name="mOpen_incognitoDesc">切换无痕模式（仅用于火狐浏览器）</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

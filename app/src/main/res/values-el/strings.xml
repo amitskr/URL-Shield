@@ -41,4 +41,6 @@
     <string name="spin_lightTheme">Φωτεινό</string>
     <string name="menu_toggleDecorations">Εναλλαγή όλων των τίτλων</string>
     <string name="link_source">Πηγαίος κώδικας</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

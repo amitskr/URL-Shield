@@ -251,4 +251,6 @@
     <string name="mUnshort_tm">API gratuita de Unshorten.me</string>
     <string name="mHosts_buildDownload">Baixando \'%s\' hosts de %s…</string>
     <string name="mStatus_error">Erro interno ao tentar verificar a URL: %s</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

@@ -275,4 +275,6 @@
     <string name="mUnshort_ok">Удлиненно</string>
     <string name="mUnshort_unshort">Удлинить</string>
     <string name="mUnshort_name">Удлинитель</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

@@ -240,4 +240,6 @@ Para desabilitar o log, basta desabilitar o módulo."</string>
     <string name="mHosts_buildDownload">Fazendo download de hosts \'%s\' de %s…</string>
     <string name="mHosts_buildSave">Salvando…</string>
     <string name="mHosts_built">Banco de dados construído: %d hosts</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

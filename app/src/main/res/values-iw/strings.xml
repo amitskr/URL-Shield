@@ -154,4 +154,6 @@
     <string name="mRemove_all">להסיר את כל</string>
     <string name="mRemove_one">הסר את %s</string>
     <string name="mRemove_empty">הסר ריקים</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

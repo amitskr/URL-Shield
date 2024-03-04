@@ -137,4 +137,6 @@
     <string name="mHosts_fakenews">假新聞</string>
     <string name="mUnshort_name">縮址還原器</string>
     <string name="mHosts_malware">廣告/惡意軟體</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

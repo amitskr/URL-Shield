@@ -229,4 +229,6 @@ PabloOQさんのアイデアとはじめの実装に感謝します!"</string>
     <string name="mHosts_buildDownload">"%s個のホストを %s からダウンロード中…"</string>
     <string name="mHosts_buildSave">保存中…</string>
     <string name="mHosts_built">データベースが作成されました: %d個のホスト</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

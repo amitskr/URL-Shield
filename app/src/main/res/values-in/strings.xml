@@ -275,4 +275,6 @@
     <string name="mChg_updated">Aplikasi telah diperbarui.</string>
     <string name="mChg_current">Versi saat ini: %s</string>
     <string name="mChg_view">Lihat perubahan</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

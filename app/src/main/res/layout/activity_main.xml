@@ -1,107 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="#808080"
+    android:gravity="center"
     android:orientation="vertical"
-    android:weightSum="5"
     tools:context=".activities.MainActivity">
 
     <LinearLayout
+        android:id="@+id/heading"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:gravity="center"
+        android:layout_height="200dp"
         android:orientation="vertical">
 
-        <ImageButton
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@android:color/transparent"
-            android:onClick="aboutToast"
-            android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher" />
-
         <TextView
+            android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
+            android:layout_margin="0sp"
+            android:padding="0sp"
+            android:text="@string/welcome"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0sp"
+            android:gravity="start"
+            android:padding="0sp"
             android:text="@string/app_name"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="52sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/trust"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding"
-            android:gravity="center"
-            android:text="@string/txt_info" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding"
-            android:autoLink="web"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:linksClickable="false"
-            android:text="@string/txt_sample" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:linksClickable="false"
-            android:minHeight="48dp"
-            android:onClick="openSample"
-            android:padding="@dimen/smallPadding"
-            android:text="@string/sample_url" />
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding"
-            android:layout_weight="1"
-            android:drawableStart="@android:drawable/ic_menu_sort_by_size"
-            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
-            android:drawablePadding="@dimen/smallPadding"
-            android:onClick="openModulesActivity"
-            android:paddingLeft="@dimen/padding"
-            android:paddingRight="@dimen/padding"
-            android:text="@string/a_modules" />
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/smallPadding"
-            android:layout_weight="1"
-            android:drawableStart="@android:drawable/ic_menu_preferences"
-            android:drawableLeft="@android:drawable/ic_menu_preferences"
-            android:drawablePadding="@dimen/smallPadding"
-            android:onClick="openSettings"
-            android:paddingLeft="@dimen/padding"
-            android:paddingRight="@dimen/padding"
-            android:text="@string/a_settings" />
-
-        <Button
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/smallPadding"
-            android:layout_weight="1"
-            android:drawableStart="@android:drawable/ic_menu_info_details"
-            android:drawableLeft="@android:drawable/ic_menu_info_details"
-            android:drawablePadding="@dimen/smallPadding"
-            android:onClick="openAbout"
-            android:paddingLeft="@dimen/padding"
-            android:paddingRight="@dimen/padding"
-            android:text="@string/a_about" />
-
+            android:layout_margin="0sp"
+            android:padding="0sp"
+            android:text="@string/your_trusted_text"
+            android:textSize="26sp" />
     </LinearLayout>
-</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/panel_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@string/txt_info"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="openSample"
+                android:src="@drawable/test_group" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="openModulesActivity"
+                android:src="@drawable/modules_group" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="openSettings"
+                android:src="@drawable/settings_group" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="openAbout"
+                android:src="@drawable/about_group" />
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/padding"-->
+        <!--            android:autoLink="web"-->
+        <!--            android:clickable="true"-->
+        <!--            android:focusable="true"-->
+        <!--            android:gravity="center"-->
+        <!--            android:linksClickable="false"-->
+        <!--            android:text="@string/txt_sample" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:autoLink="web"-->
+        <!--            android:clickable="true"-->
+        <!--            android:focusable="true"-->
+        <!--            android:gravity="center"-->
+        <!--            android:linksClickable="false"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:onClick="openSample"-->
+        <!--            android:padding="@dimen/smallPadding"-->
+        <!--            android:text="@string/sample_url" />-->
+
+        <!--        <Button-->
+        <!--            style="?android:attr/buttonBarButtonStyle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/padding"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:drawableStart="@android:drawable/ic_menu_sort_by_size"-->
+        <!--            android:drawablePadding="@dimen/smallPadding"-->
+        <!--            android:onClick="openModulesActivity"-->
+        <!--            android:paddingLeft="@dimen/padding"-->
+        <!--            android:paddingRight="@dimen/padding"-->
+        <!--            android:text="@string/a_modules" />-->
+
+        <!--        <Button-->
+        <!--            style="?android:attr/buttonBarButtonStyle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/smallPadding"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:drawableStart="@android:drawable/ic_menu_preferences"-->
+        <!--            android:drawablePadding="@dimen/smallPadding"-->
+        <!--            android:onClick="openSettings"-->
+        <!--            android:paddingLeft="@dimen/padding"-->
+        <!--            android:paddingRight="@dimen/padding"-->
+        <!--            android:text="@string/a_settings" />-->
+
+        <!--        <Button-->
+        <!--            style="?android:attr/buttonBarButtonStyle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/smallPadding"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:drawableStart="@android:drawable/ic_menu_info_details"-->
+        <!--            android:drawablePadding="@dimen/smallPadding"-->
+        <!--            android:onClick="openAbout"-->
+        <!--            android:paddingLeft="@dimen/padding"-->
+        <!--            android:paddingRight="@dimen/padding"-->
+        <!--            android:text="@string/a_about" />-->
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@android:color/transparent"
+        android:onClick="aboutToast"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

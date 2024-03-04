@@ -340,4 +340,6 @@ This is an advanced version of the 'Queries Remover' module."</string>
     <string name="mChg_updated">The app has been updated.</string>
     <string name="mChg_current">Current version: %s</string>
     <string name="mChg_view">View changes</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

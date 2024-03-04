@@ -336,4 +336,6 @@ Hay algunos enlaces cuyo único propósito es redirigirte a otro enlace. Si el e
     <string name="mChg_updated">La aplicación se ha actualizado.</string>
     <string name="mChg_current">Versión actual: %s</string>
     <string name="mChg_view">Ver los cambios</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

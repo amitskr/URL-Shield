@@ -117,4 +117,6 @@
     <string name="mUnshort_error">Tjenerfeil: %s</string>
     <string name="mStatus_autoRedirect">Erstatt videresendelsesnettadresser automatisk</string>
     <string name="mPttrn_name">Mønstersjekker</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>

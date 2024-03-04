@@ -275,4 +275,6 @@
     <string name="mClear_hashDesc">URL van het catalogus-hashbestand. Als u dit weglaat, wordt de download niet gecontroleerd om te zien of er mee is geknoeid/gewijzigd (niet aanbevolen)</string>
     <string name="mClear_hashError">Kan de hash niet ophalen. Zorg ervoor dat de URL geldig is en dat u een actieve verbinding heeft</string>
     <string name="mClear_lastCheck">Laatste controle:</string>
+    <string name="welcome">Welcome to</string>
+    <string name="your_trusted_text">Your trusted guardian \n against harmful links!</string>
 </resources>
