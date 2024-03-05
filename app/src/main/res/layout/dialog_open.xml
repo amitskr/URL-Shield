@@ -2,30 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/ctabs"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/mOpen_tabsDesc"
-        android:minWidth="0dp"
-        android:src="@drawable/ctabs_off" />
-
-    <ImageButton
-        android:id="@+id/mode_incognito"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/mOpen_incognitoDesc"
-        android:minWidth="0dp"
-        android:src="@drawable/no_incognito" />
 
     <LinearLayout
         android:id="@+id/open_parent"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/open_both"
         android:orientation="horizontal">
@@ -42,6 +26,15 @@
             android:textColor="?android:attr/colorBackground"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/browser_icon"
+            android:layout_gravity="center"
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:contentDescription="Selected browser icon"
+            android:src="@drawable/chrome"/>
+
+
         <ImageButton
             android:id="@+id/open_with"
             style="?android:attr/buttonBarButtonStyle"
@@ -52,12 +45,43 @@
             android:tint="?attr/colorAccent"
             android:paddingEnd="1dp" />
 
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/ctabs"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/mOpen_tabsDesc"
+        android:minWidth="0dp"
+        android:src="@drawable/ctabs_on" />
+
+    <ImageButton
+        android:id="@+id/mode_incognito"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/mOpen_incognitoDesc"
+        android:minWidth="0dp"
+        android:src="@drawable/no_incognito" />
 
     <ImageButton
         android:id="@+id/copyUrl"
         style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
         android:layout_height="match_parent"
         android:contentDescription="@string/mOpen_copyUrl"
         android:minWidth="0dp"
@@ -69,10 +93,14 @@
     <ImageButton
         android:id="@+id/share"
         style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
         android:layout_height="match_parent"
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:contentDescription="@string/mOpen_share"
         android:src="@drawable/share" />
+
+    </LinearLayout>
 </LinearLayout>
