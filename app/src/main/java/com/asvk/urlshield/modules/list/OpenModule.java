@@ -316,7 +316,7 @@ class OpenDialog extends AModuleDialog {
         else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Firefox"))
             browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.firefox));
         else
-            openUrl(index);
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.default_browser));
     }
 
 }
