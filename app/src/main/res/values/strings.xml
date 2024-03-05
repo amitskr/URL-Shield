@@ -341,4 +341,5 @@ This is an advanced version of the 'Queries Remover' module."</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="submit">Submit</string>
+    <string name="selected_browser_icon">Selected browser icon</string>
 </resources>

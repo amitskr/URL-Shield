@@ -33,36 +33,34 @@ public class Incognito {
      */
     public void initFrom(Intent intent, ImageButton button) {
         // init state
-        boolean visible;
-        switch (pref.get()) {
-            case AUTO:
-            default:
+        boolean visible = switch (pref.get()) {
+            default -> {
                 // for Firefox
                 state = intent.getBooleanExtra("private_browsing_mode", false);
-                visible = true;
-                break;
-            case HIDDEN:
+                yield true;
+            }
+            case HIDDEN -> {
                 // for Firefox
                 state = intent.getBooleanExtra("private_browsing_mode", false);
-                visible = false;
-                break;
-            case DEFAULT_ON:
+                yield false;
+            }
+            case DEFAULT_ON -> {
                 state = true;
-                visible = true;
-                break;
-            case DEFAULT_OFF:
+                yield true;
+            }
+            case DEFAULT_OFF -> {
                 state = false;
-                visible = true;
-                break;
-            case ALWAYS_ON:
+                yield true;
+            }
+            case ALWAYS_ON -> {
                 state = true;
-                visible = false;
-                break;
-            case ALWAYS_OFF:
+                yield false;
+            }
+            case ALWAYS_OFF -> {
                 state = false;
-                visible = false;
-                break;
-        }
+                yield false;
+            }
+        };
 
         // init button
         if (visible) {

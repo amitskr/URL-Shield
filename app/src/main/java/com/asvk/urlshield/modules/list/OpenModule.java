@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 
 import com.asvk.urlshield.R;
@@ -75,7 +76,7 @@ public class OpenModule extends AModuleData {
 }
 
 class OpenDialog extends AModuleDialog {
-
+    private int indexB = 0;
     private final GenericPref.Bool closeOpenPref;
     private final GenericPref.Bool closeSharePref;
     private final GenericPref.Bool closeCopyPref;
@@ -89,6 +90,7 @@ class OpenDialog extends AModuleDialog {
 
     private List<String> packages;
     private Button btn_open;
+    private ImageView browserIcon;
     private ImageButton btn_openWith;
     private View openParent;
     private Menu menu;
@@ -125,7 +127,10 @@ class OpenDialog extends AModuleDialog {
         // init open
         openParent = views.findViewById(R.id.open_parent);
         btn_open = views.findViewById(R.id.open);
-        btn_open.setOnClickListener(v -> openUrl(0));
+        btn_open.setOnClickListener(v -> openUrl(indexB));
+
+        // init browserIcon
+        browserIcon = views.findViewById(R.id.browser_icon);
 
         // init openWith
         btn_openWith = views.findViewById(R.id.open_with);
@@ -152,7 +157,9 @@ class OpenDialog extends AModuleDialog {
         // init openWith popup
         popup = new PopupMenu(getActivity(), btn_open);
         popup.setOnMenuItemClickListener(item -> {
-            openUrl(item.getItemId());
+            indexB =item.getItemId();
+            btn_open.setText(getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(item.getItemId()), getActivity())));
+            selectBrowserIcons(indexB);
             return false;
         });
         menu = popup.getMenu();
@@ -193,9 +200,10 @@ class OpenDialog extends AModuleDialog {
         lastOpened.sort(packages, getUrl());
 
         // set
-        btn_open.setText(getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(0), getActivity())));
+        btn_open.setText(getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(indexB), getActivity())));
         AndroidUtils.setEnabled(openParent, true);
         btn_open.setEnabled(true);
+        selectBrowserIcons(indexB);
         menu.clear();
         if (packages.size() == 1) {
             btn_openWith.setVisibility(View.GONE);
@@ -293,6 +301,22 @@ class OpenDialog extends AModuleDialog {
         if (closeCopyPref.get()) {
             getActivity().finish();
         }
+    }
+
+    /**
+     * Set the Browser Icon
+     */
+    private void selectBrowserIcons(int index) {
+        if(getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Chrome"))
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.chrome));
+        else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Bing"))
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ms_edge));
+        else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Opera"))
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.opera));
+        else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Firefox"))
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.firefox));
+        else
+            openUrl(index);
     }
 
 }
