@@ -192,7 +192,7 @@ class OpenDialog extends AModuleDialog {
             btn_open.setText(R.string.mOpen_noapps);
             AndroidUtils.setEnabled(openParent, false);
             btn_open.setEnabled(false);
-            btn_openWith.setVisibility(View.GONE);
+//            btn_openWith.setVisibility(View.GONE);
             return;
         }
 
@@ -205,14 +205,21 @@ class OpenDialog extends AModuleDialog {
         btn_open.setEnabled(true);
         selectBrowserIcons(indexB);
         menu.clear();
-        if (packages.size() == 1) {
-            btn_openWith.setVisibility(View.GONE);
-        } else {
+        if (packages.size() != 1) {
             btn_openWith.setVisibility(View.VISIBLE);
             for (int i = 1; i < packages.size(); i++) {
                 menu.add(Menu.NONE, i, i, getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(i), getActivity())));
             }
         }
+
+//        if (packages.size() == 1) {
+//            btn_openWith.setVisibility(View.GONE);
+//        } else {
+//            btn_openWith.setVisibility(View.VISIBLE);
+//            for (int i = 1; i < packages.size(); i++) {
+//                menu.add(Menu.NONE, i, i, getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(i), getActivity())));
+//            }
+//        }
 
     }
 
