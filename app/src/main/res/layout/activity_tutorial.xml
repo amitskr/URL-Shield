@@ -243,12 +243,36 @@
                     android:gravity="center"
                     android:text="@string/txt_tutorial4" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/app_name"
-                    android:onClick="openModulesActivity"
-                    android:src="@drawable/modules_group" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:minWidth="100dp"
+                    android:background="@drawable/module_bg"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    android:onClick="openModulesActivity">
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_module"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/maxPadding"
+                        android:background="@drawable/module_icon_bg"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="@string/modules"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="-8dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
 
             </LinearLayout>
 

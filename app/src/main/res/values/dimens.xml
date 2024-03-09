@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="minPadding">8dp</dimen>
+    <dimen name="maxPadding">12dp</dimen>
     <dimen name="padding">25dp</dimen>
     <dimen name="smallPadding">10dp</dimen>
     <dimen name="square_button">35dp</dimen>

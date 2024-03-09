@@ -76,22 +76,11 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_margin="@dimen/smallPadding"
+                    android:layout_margin="@dimen/minPadding"
                     android:contentDescription="@string/mOpen_tabsDesc"
                     android:src="@drawable/ctabs_on" />
             </LinearLayout>
         </LinearLayout>
-        <!--        <ImageButton-->
-        <!--            android:id="@+id/ctabs"-->
-        <!--            style="?android:attr/buttonBarButtonStyle"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:layout_margin="5dp"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:contentDescription="@string/mOpen_tabsDesc"-->
-        <!--            android:minWidth="0dp"-->
-        <!--            android:background="@drawable/circle_bg"-->
-        <!--            android:src="@drawable/ctabs_on" />-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -110,22 +99,11 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_margin="@dimen/smallPadding"
+                    android:layout_margin="@dimen/minPadding"
                     android:contentDescription="@string/mOpen_tabsDesc"
                     android:src="@drawable/no_incognito" />
             </LinearLayout>
         </LinearLayout>
-<!--        <ImageButton-->
-<!--            android:id="@+id/mode_incognito"-->
-<!--            style="?android:attr/buttonBarButtonStyle"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@drawable/circle_bg"-->
-<!--            android:contentDescription="@string/mOpen_incognitoDesc"-->
-<!--            android:minWidth="0dp"-->
-<!--            android:src="@drawable/no_incognito" />-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -144,24 +122,11 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:layout_margin="@dimen/smallPadding"
+                    android:layout_margin="@dimen/minPadding"
                     android:contentDescription="@string/mOpen_tabsDesc"
                     android:src="@drawable/copy" />
             </LinearLayout>
         </LinearLayout>
-<!--        <ImageButton-->
-<!--            android:id="@+id/copyUrl"-->
-<!--            style="?android:attr/buttonBarButtonStyle"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@drawable/circle_bg"-->
-<!--            android:contentDescription="@string/mOpen_copyUrl"-->
-<!--            android:minWidth="0dp"-->
-<!--            android:minHeight="0dp"-->
-<!--            android:scaleType="center"-->
-<!--            android:src="@drawable/copy" />-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -185,18 +150,6 @@
                     android:src="@drawable/share" />
             </LinearLayout>
         </LinearLayout>
-<!--        <ImageButton-->
-<!--            android:id="@+id/share"-->
-<!--            style="?android:attr/buttonBarButtonStyle"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@drawable/circle_bg"-->
-<!--            android:contentDescription="@string/mOpen_share"-->
-<!--            android:minWidth="0dp"-->
-<!--            android:minHeight="0dp"-->
-<!--            android:src="@drawable/share" />-->
 
     </LinearLayout>
 </LinearLayout>
