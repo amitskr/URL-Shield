@@ -322,6 +322,8 @@ class OpenDialog extends AModuleDialog {
             browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.opera));
         else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Firefox"))
             browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.firefox));
+        else if (getActivity().getString(R.string.mOpen_with, PackageUtils.getPackageName(packages.get(index), getActivity())).equals("Open with Brave"))
+            browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.brave));
         else
             browserIcon.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.default_browser));
     }
