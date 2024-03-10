@@ -16,4 +16,5 @@
 
 <resources>
     <attr name="colorAccent" format="color" />
+    <attr name="panel_background" format="color" />
 </resources>

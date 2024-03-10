@@ -29,6 +29,8 @@
     <color name="light_blue_900">#FF01579B</color>
     <color name="black_overlay">#66000000</color>
     <color name="black">#000000</color>
+    <color name="dark_panel_bg">#FF222f4f</color>
+    <color name="light_panel_bg">#FFabe2ff</color>
     <color name="test_bg">#FFdde8fd</color>
     <color name="test_icon_bg">#FFb5ccfa</color>
     <color name="module_bg">#FFfceff6</color>

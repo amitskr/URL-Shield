@@ -18,6 +18,7 @@
 
     <style name="ActivityThemeDark"
         parent="android:Theme.DeviceDefault">
+        <item name="panel_background">@color/dark_panel_bg</item>
         <item name="colorAccent">?android:attr/colorAccent</item>
         <item name="android:windowLightStatusBar">?android:attr/isLightTheme</item>
         <item name="android:windowLightNavigationBar">?android:attr/isLightTheme</item>
@@ -29,6 +30,7 @@
 
     <style name="ActivityThemeDayNight"
         parent="android:Theme.DeviceDefault.DayNight">
+        <item name="panel_background">?attr/panel_background</item>
         <item name="colorAccent">?android:attr/colorAccent</item>
         <item name="android:windowLightStatusBar">?android:attr/isLightTheme</item>
         <item name="android:windowLightNavigationBar">?android:attr/isLightTheme</item>
@@ -40,6 +42,7 @@
 
     <style name="ActivityThemeLight"
         parent="android:Theme.DeviceDefault.Light">
+        <item name="panel_background">@color/light_panel_bg</item>
         <item name="colorAccent">?android:attr/colorAccent</item>
         <item name="android:windowLightStatusBar">?android:attr/isLightTheme</item>
         <item name="android:windowLightNavigationBar">?android:attr/isLightTheme</item>
